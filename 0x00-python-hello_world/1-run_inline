@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "$PYCODE" > temp.py
+python3 temp.py
+rm temp.py
