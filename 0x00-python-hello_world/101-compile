@@ -1,0 +1,4 @@
+#!/bin/bash
+pyfile="$PYFILE"
+outputfile="${pyfile}c"
+python3 -m py_compile -o "$outputfile" "$pyfile"
