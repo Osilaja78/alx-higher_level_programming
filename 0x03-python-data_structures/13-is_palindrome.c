@@ -12,7 +12,7 @@
 
 int is_palindrome(listint_t **head)
 {
-	int i, j, buf[2048];
+	int i, j, buf[1024];
 	listint_t *current = *head;
 
 	i = 0;
