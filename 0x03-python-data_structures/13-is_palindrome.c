@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * reverseList - reverses a linked list.
+ * reverse_list - reverses a linked list.
  * @head: head of linked list
  *
  * Return: reversed list.
