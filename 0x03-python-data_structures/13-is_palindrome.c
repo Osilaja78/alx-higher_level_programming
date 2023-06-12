@@ -7,7 +7,7 @@
  *
  * Return: reversed list.
  */
-listint_t *reverseList(listint_t *head)
+listint_t *reverse_list(listint_t *head)
 {
 	listint_t *prev = NULL;
 	listint_t *current = head;
@@ -49,7 +49,7 @@ int is_palindrome(listint_t **head)
 	if (fast != NULL)
 		slow = slow->next;
 
-	prev->next = reverseList(slow);
+	prev->next = reverse_list(slow);
 
 	listint_t *p1 = *head;
 	listint_t *p2 = prev->next;
