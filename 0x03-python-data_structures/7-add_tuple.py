@@ -8,4 +8,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
     sum1 = a1 + b1
     sum2 = a2 + b2
     return (sum1, sum2)
-
