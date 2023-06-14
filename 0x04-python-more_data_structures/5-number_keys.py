@@ -4,4 +4,3 @@ def number_keys(a_dictionary):
     for i, k in enumerate(a_dictionary):
         result += 1
     return result
-
