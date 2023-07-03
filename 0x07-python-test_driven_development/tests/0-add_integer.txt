@@ -1,0 +1,23 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(10)
+108
+>>> add_integer(2, 23)
+25
+>>> add_integer(a, b)
+Traceback (most recent call last):
+    ...
+NameError: name 'a' is not defined
+>>> add_integer(2.34, 5)
+7
+>>> add_integer(inf)
+Traceback (most recent call last):
+    ...
+NameError: name 'inf' is not defined
+>>> add_integer("a")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(float("inf"))
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
