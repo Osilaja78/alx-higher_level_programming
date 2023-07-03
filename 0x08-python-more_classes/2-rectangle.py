@@ -3,6 +3,7 @@
 A rectangle class
 """
 
+
 class Rectangle:
     """
     Class that defines a rectangle.
