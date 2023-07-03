@@ -3,6 +3,7 @@
 An empty class Rectangle that defined a rectangel
 """
 
+
 class Rectangle:
     """ Defines a rectangle class """
     pass
