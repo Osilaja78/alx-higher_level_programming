@@ -27,6 +27,8 @@ Traceback (most recent call last):
     ...
 TypeError: div must be a number
 
+>>> matrix_divided(matrix=[[1]], div=1)
+[[1.0]]
 >>> matrix = 5
 >>> matrix_divided(matrix, 2)
 Traceback (most recent call last):
