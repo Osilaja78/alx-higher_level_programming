@@ -5,7 +5,7 @@ is same as passed.
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
     Takes obj and a_class as arguments.
 
