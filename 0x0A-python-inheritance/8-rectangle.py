@@ -7,7 +7,9 @@ A class Rectangle.
 
 
 class Rectangle(BaseGeometry):
-    "A class rectangle inheriting BaseGeometry"
+    """
+    A class rectangle inheriting BaseGeometry
+    """
 
     def __init__(self, width, height):
         """
