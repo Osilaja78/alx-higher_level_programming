@@ -21,7 +21,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """ __width getter """
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -31,12 +31,12 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
 
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
         """ __height getter """
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -46,12 +46,12 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
 
-        self.height = value
+        self.__height = value
 
     @property
     def x(self):
         """__x getter method"""
-        return self.x
+        return self.__x
 
     @x.setter
     def x(self, value):
@@ -61,12 +61,12 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
 
-        self.x = value
+        self.__x = value
 
     @property
     def y(self):
         """__y getter method"""
-        return self.y
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -76,4 +76,4 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
 
-        self.y = value
+        self.__y = value
