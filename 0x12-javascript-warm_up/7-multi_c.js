@@ -1,8 +1,7 @@
-#!/usr/bin/env
+#!/usr/bin/node
 // prints x times “C is fun”
 
 const langStr = 'C is fun';
-console.log(langStr);
 
 if (isNaN(process.argv[2])) {
   console.log('Missing number of occurrences');
