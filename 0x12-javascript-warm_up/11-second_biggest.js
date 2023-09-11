@@ -1,9 +1,9 @@
 #!/usr/bin/node
-// Prints the second greatest number in a list
+// Prints the second greatest number in a list.
 
 if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  const list = process.argv.sort();
-  console.log(list[list.length - 2]);
+  const intList = process.argv.sort();
+  console.log(intList[intList.length - 2]);
 }
