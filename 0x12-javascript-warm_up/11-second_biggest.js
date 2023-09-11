@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Prints the second greatest number in a list of args
+// Prints the second greatest number in a list
 
 if (process.argv.length <= 3) {
   console.log(0);
