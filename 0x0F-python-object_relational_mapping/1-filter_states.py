@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!./venv/bin/python3
 """
 This script that lists all states with name starting
 with N.
@@ -20,7 +20,8 @@ if __name__ == "__main__":
     states = cur.fetchall()
 
     for state in states:
-        print(state)
+        if row[1][0] == 'N':
+            print(state)
 
     cur.close()
     db.close()
