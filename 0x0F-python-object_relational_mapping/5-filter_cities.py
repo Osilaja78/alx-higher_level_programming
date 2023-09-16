@@ -22,7 +22,7 @@ if __name__ == "__main__":
     cities = cur.fetchall()
 
     for city in cities:
-        print(", ".join(cities))
+        print(", ".join(city))
 
     cur.close()
     db.close()
