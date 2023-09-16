@@ -16,12 +16,13 @@ if __name__ == "__main__":
                          passwd=password, db=database)
 
     cur = db.cursor()
-    cur.execute("SELECT cities.name FROM cities JOIN \
-                 states ON cities.state_id = states.id WHERE states.name LIKE \
-                 %s ORDER BY cities.id", (name,))
+    cur.execute("SELECT cities.name FROM cities JOIN states ON \
+                 cities.state_id = states.id WHERE states.name LIKE %s \
+                 ORDER BY cities.id", (name,))
     cities = cur.fetchall()
 
     for city in cities:
+        if city[1] == name:
         print(", ".join(city))
 
     cur.close()
