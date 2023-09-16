@@ -1,4 +1,4 @@
-#!./venv/bin/python3
+#!env/bin/python3
 """
 This script that lists all states with name starting
 with N.
