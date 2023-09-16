@@ -20,7 +20,7 @@ if __name__ == "__main__":
     states = cur.fetchall()
 
     for state in states:
-        if row[1][0] == 'N':
+        if state[1][0] == 'N':
             print(state)
 
     cur.close()
