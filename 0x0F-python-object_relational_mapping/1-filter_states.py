@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This script that lists all states from the database
-hbtn_0e_0_usa.
+This script that lists all states with name starting
+with N.
 """
 import sys
 import MySQLdb
@@ -16,7 +16,7 @@ if __name__ == "__main__":
                          passwd=password, db=database)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     states = cur.fetchall()
 
     for state in states:
