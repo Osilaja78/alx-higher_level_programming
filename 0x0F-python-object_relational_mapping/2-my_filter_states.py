@@ -18,7 +18,8 @@ if __name__ == "__main__":
                          passwd=password, db=database)
 
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name LIKE '{name}' ORDER BY id ASC")
+    cur.execute(f"SELECT * FROM states WHERE name LIKE '{name}' ORDER BY id \
+                 ASC")
     states = cur.fetchall()
 
     for state in states:
