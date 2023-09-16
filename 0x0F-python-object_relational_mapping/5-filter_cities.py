@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     for city in cities:
         if city[1] == name:
-        print(", ".join(city))
+            print(", ".join(city))
 
     cur.close()
     db.close()
