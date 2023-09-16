@@ -21,9 +21,7 @@ if __name__ == "__main__":
                  ORDER BY cities.id", (name,))
     cities = cur.fetchall()
 
-    for city in cities:
-        if city[1] == name:
-            print(", ".join(city))
+    print(", ".join(city[0] for city in cities))
 
     cur.close()
     db.close()
