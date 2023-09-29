@@ -9,6 +9,9 @@ if __name__ == "__main__":
     import sys
     import urllib.request
 
-    with urllib.request.urlopen(sys.argv[1]) as r:
-        header = r.headers.get('X-Request-Id')
-        print(header)
+    try:
+        with urllib.request.urlopen(sys.argv[1]) as r:
+            header = r.headers.get('X-Request-Id')
+            print(header)
+    except urllib.error.URLError as e:
+        print(f"Error: {e}")
